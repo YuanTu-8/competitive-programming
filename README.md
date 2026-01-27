@@ -5,8 +5,8 @@ My solutions to competitive programming problems (UVa Online Judge, etc.)
 ## Structure
 ```
 problem-number/
-¢u¢w¢w solution.cpp
-¢|¢w¢w README.md    # approach & notes (optional)
+â”œâ”€â”€ solution.cpp
+â””â”€â”€ README.md      # approach & notes (optional)
 ```
 
 ## Environment
