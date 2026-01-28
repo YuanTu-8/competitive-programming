@@ -19,7 +19,7 @@ static int getCycleLength(long long number) {
 	// Get base cycle length
 	int cycleLength = (number == 1) ? 1 : memo.at(number);
 
-	// Backfill memo for all numbers in the path (path compression)
+	// Backfill memo for all numbers in the path
 	for (int i = static_cast<int>(path.size()) - 1; i >= 0; --i) {
 		++cycleLength;
 		memo[path[i]] = cycleLength;
