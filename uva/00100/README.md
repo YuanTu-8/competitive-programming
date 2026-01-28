@@ -12,7 +12,7 @@ To avoid repeating calculations, store the results in a hash map. When computing
 Loop through each number and calculate cycle length, using a hash map to remember previous results.
 
 ## Complexity
-- Time: O(n) average case with memoization
+- Time: O(n) with memoization, where n is the range size. Each cycle length is computed once and cached for O(1) lookup.
 - Space: O(m) where m is the number of unique values cached
 
 ## Key Insight
