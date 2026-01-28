@@ -13,7 +13,7 @@ Loop through each number and calculate cycle length, using a hash map to remembe
 
 ## Complexity
 - Time: O(n) with memoization, where n is the range size. Each cycle length is computed once and cached for O(1) lookup.
-- Space: O(m) where m is the number of unique values cached
+- Space: O(m), where m is the number of unique values stored in the memo table.
 
 ## Key Insight
 1. The output must preserve the original input order (i, j) even though we process min to max internally.
