@@ -27,11 +27,11 @@ int computeCycleLength(long long n) {
 
 // Find max cycle length in [start, end]
 int findMaxCycleLength(int start, int end) {
-    int maxLen = 0;
+    int maxLength = 0;
     for (int n = start; n <= end; ++n) {
-        maxLen = std::max(maxLen, computeCycleLength(n));
+        maxLength = std::max(maxLength, computeCycleLength(n));
     }
-    return maxLen;
+    return maxLength;
 }
 
 int main() {
@@ -42,10 +42,10 @@ int main() {
     while (std::cin >> i >> j) {
         int start = std::min(i, j);
         int end = std::max(i, j);
-        int maxLen = findMaxCycleLength(start, end);
+        int maxLength = findMaxCycleLength(start, end);
 
         // Output preserves original input order
-        std::cout << i << ' ' << j << ' ' << maxLen << '\n';
+        std::cout << i << ' ' << j << ' ' << maxLength << '\n';
     }
 
     return 0;
