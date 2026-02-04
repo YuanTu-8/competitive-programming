@@ -1,0 +1,55 @@
+BasedOnStyle: Google
+
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+IndentCaseLabels: true
+AccessModifierOffset: -4
+NamespaceIndentation: None
+
+ColumnLimit: 100
+BinPackParameters: true
+BinPackArguments: true
+AlignAfterOpenBracket: Align
+BreakBeforeBraces: Attach
+
+AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortBlocksOnASingleLine: Empty
+AllowShortLambdasOnASingleLine: Inline
+
+PointerAlignment: Left
+ReferenceAlignment: Pointer
+SpaceBeforeAssignmentOperators: true
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+SpacesInAngles: Never
+SpacesInCStyleCastParentheses: false
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyBlock: false
+
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignOperands: Align
+AlignTrailingComments: true
+
+SortIncludes: CaseSensitive
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: '"[^/]*\.h"'
+    Priority: 1
+  - Regex: '<c[a-z]+>'
+    Priority: 2
+  - Regex: '<[a-z_]+>'
+    Priority: 3
+  - Regex: '.*'
+    Priority: 4
+
+MaxEmptyLinesToKeep: 1
+SeparateDefinitionBlocks: Always
+SpacesBeforeTrailingComments: 2
+FixNamespaceComments: true
+
+PenaltyReturnTypeOnItsOwnLine: 200
+PenaltyExcessCharacter: 100
