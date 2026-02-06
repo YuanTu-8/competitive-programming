@@ -12,7 +12,9 @@ function promiseAll<T>(functions: Fn<T>[]): Promise<T[]> {
             fn()
                 .then((value) => {
                     results[idx] = value;
-                    if (++resolvedCount === totalCount) resolve(results);
+                    if (++resolvedCount === totalCount) {
+                        resolve(results);
+                    }
                 })
                 .catch(reject);
         }
