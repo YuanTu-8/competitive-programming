@@ -19,7 +19,7 @@ class EventEmitter {
         };
     }
 
-    emit(eventName: string, args: any[] = []): ReturnType<Callback> {
+    emit(eventName: string, args: any[] = []): ReturnType<Callback>[] {
         const callbacks = this.listeners.get(eventName);
         if (!callbacks) return [];
         return [...callbacks].map(callback => callback(...args));
