@@ -11,11 +11,11 @@ competitive-programming/
 ├── leetcode/
 │   └── {problem-number}/
 │       ├── main.ts
-│       └── README.md
+│       └── readme.md
 └── uva/
     └── {problem-number}/
         ├── main.cpp
-        └── README.md
+        └── readme.md
 ```
 
 ## Environment
