@@ -8,11 +8,7 @@ int cycleLength(long long n) {
     if (n == 1) return 1;
     if (cache.count(n)) return cache[n];
 
-    if (n % 2 == 0) {
-        return cache[n] = 1 + cycleLength(n / 2);
-    } else {
-        return cache[n] = 1 + cycleLength(3 * n + 1);
-    }
+    return cache[n] = 1 + cycleLength((n % 2 == 0) ? (n / 2) : (3 * n + 1));
 }
 
 int main() {
