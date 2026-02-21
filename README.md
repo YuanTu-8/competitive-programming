@@ -1,12 +1,30 @@
 # Competitive Programming
-My solutions to competitive programming problems (UVa Online Judge, etc.)
+My solutions to competitive programming problems.
+
+## Platforms
+- [LeetCode](https://leetcode.com/)
+- [UVa Online Judge](https://onlinejudge.org/)
 
 ## Structure
 ```
-problem-number/
-├── solution.cpp
-└── README.md     # approach & notes (optional)
+competitive-programming/
+├── leetcode/
+│   └── {problem-number}/
+│       ├── main.ts
+│       └── README.md
+└── uva/
+    └── {problem-number}/
+        ├── main.cpp
+        └── README.md
 ```
 
 ## Environment
-- Visual Studio 2022
+### Editor
+- Visual Studio Code
+
+### C++
+- Compiler: MSVC (Visual Studio 2022 Community)
+- Standard: C++14
+
+### TypeScript
+- Target: ES2022
