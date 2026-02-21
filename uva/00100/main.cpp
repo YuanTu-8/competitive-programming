@@ -28,6 +28,4 @@ int main() {
         // Output preserves original input order
         std::cout << i << ' ' << j << ' ' << maxLength << '\n';
     }
-
-    return 0;
 }
