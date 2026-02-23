@@ -17,7 +17,7 @@ AllowShortIfStatementsOnASingleLine: WithoutElse
 AllowShortLoopsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: Inline
 AllowShortBlocksOnASingleLine: Empty
-AllowShortLambdasOnASingleLine: Inline
+AllowShortLambdasOnASingleLine: All
 
 PointerAlignment: Left
 ReferenceAlignment: Pointer
@@ -39,11 +39,11 @@ IncludeBlocks: Regroup
 IncludeCategories:
   - Regex: '"[^/]*\.h"'
     Priority: 1
-  - Regex: '<c[a-z]+>'
+  - Regex: "<c[a-z]+>"
     Priority: 2
-  - Regex: '<[a-z_]+>'
+  - Regex: "<[a-z_]+>"
     Priority: 3
-  - Regex: '.*'
+  - Regex: ".*"
     Priority: 4
 
 MaxEmptyLinesToKeep: 1
