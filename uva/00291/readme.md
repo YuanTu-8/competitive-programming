@@ -1,4 +1,4 @@
-# UVa 291 - The House Of Santa Claus
+# UVa 00291 - The House Of Santa Claus
 
 ## Problem
 Find all ways to draw a house shape (5 nodes, 8 edges) in one stroke starting from node 1, visiting every edge exactly once.
