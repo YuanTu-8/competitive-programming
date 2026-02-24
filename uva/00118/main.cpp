@@ -50,7 +50,8 @@ int main() {
         bool isLost = false;
 
         for (char cmd : commands) {
-            if (isLost) break;
+            if (isLost)
+                break;
 
             if (cmd == 'L') {
                 dirIdx = (dirIdx + 3) % NUM_DIRECTIONS;
@@ -62,7 +63,8 @@ int main() {
         }
 
         std::cout << x << ' ' << y << ' ' << DIRS[dirIdx];
-        if (isLost) std::cout << " LOST";
+        if (isLost)
+            std::cout << " LOST";
         std::cout << '\n';
     }
 }
