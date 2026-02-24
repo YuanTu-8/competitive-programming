@@ -13,16 +13,18 @@ struct Event {
 
 std::vector<Event> buildSortedEvents() {
     std::vector<Event> events;
-    int left, height, right;
-    while (std::cin >> left >> height >> right) {
+
+    for (int left, height, right; std::cin >> left >> height >> right;) {
         events.push_back({left, height, EventType::Start});
         events.push_back({right, height, EventType::End});
     }
 
     std::sort(events.begin(), events.end(), [](const Event& a, const Event& b) {
-        if (a.x != b.x) return a.x < b.x;
+        if (a.x != b.x)
+            return a.x < b.x;
         // At same x: starts before ends, taller before shorter
-        if (a.type != b.type) return a.type < b.type;  // Start(0) < End(1)
+        if (a.type != b.type)
+            return a.type < b.type;  // Start(0) < End(1)
 
         return a.type == EventType::Start ? a.height > b.height   // starts: taller first
                                           : a.height < b.height;  // ends: shorter first
@@ -48,7 +50,8 @@ int main() {
         }
 
         int currMax = *activeHeights.rbegin();
-        if (currMax == prevMax) continue;
+        if (currMax == prevMax)
+            continue;
 
         std::cout << separate << event.x << ' ' << currMax;
         separate = " ";
