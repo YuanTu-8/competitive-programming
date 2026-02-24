@@ -13,11 +13,11 @@ BinPackArguments: true
 AlignAfterOpenBracket: Align
 BreakBeforeBraces: Attach
 
-AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortIfStatementsOnASingleLine: Never
 AllowShortLoopsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: Inline
 AllowShortBlocksOnASingleLine: Empty
-AllowShortLambdasOnASingleLine: All
+AllowShortLambdasOnASingleLine: Inline
 
 PointerAlignment: Left
 ReferenceAlignment: Pointer
