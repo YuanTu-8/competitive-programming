@@ -11,7 +11,8 @@ competitive-programming/
 ├── leetcode/
 │   └── {problem-number}/
 │       ├── main.ts
-│       └── readme.md
+│       ├── readme.md
+│       └── tsconfig.json
 └── uva/
     └── {problem-number}/
         ├── main.cpp
