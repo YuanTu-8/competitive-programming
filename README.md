@@ -25,7 +25,7 @@ competitive-programming/
 
 ### C++
 - Compiler: MSVC (Visual Studio 2022 Community)
-- Standard: C++14
+- Standard: C++17
 
 ### TypeScript
 - Target: ES2022
