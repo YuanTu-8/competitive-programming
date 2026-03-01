@@ -4,9 +4,6 @@
 #include <vector>
 
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-
     for (std::string a, b; std::getline(std::cin, a) && std::getline(std::cin, b);) {
         int lenA = a.length(), lenB = b.length();
         std::vector<std::vector<int>> lcs(lenA + 1, std::vector<int>(lenB + 1, 0));
