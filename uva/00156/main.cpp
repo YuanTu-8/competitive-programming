@@ -21,9 +21,6 @@ std::string normalize(std::string word) {
 }
 
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-
     std::unordered_map<std::string, AnagramGroup> groups;
 
     for (std::string word; std::cin >> word && word != "#";) {
