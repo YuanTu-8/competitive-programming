@@ -28,8 +28,5 @@ void dfs(int curr, int depth) {
 }
 
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-
     dfs(1, 0);
 }
