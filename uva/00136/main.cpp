@@ -4,10 +4,6 @@
 constexpr int TARGET = 1500;
 
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-
-    // Generate ugly numbers using three-pointer method
     long long ugly[TARGET + 1] = {0, 1};
     constexpr int primes[] = {2, 3, 5};
     int indices[] = {1, 1, 1};
