@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string>
+#include <string_view>
 
 constexpr int MAX_COORDINATE = 50;
 constexpr int NUM_DIRECTIONS = 4;
@@ -9,7 +9,7 @@ struct Delta {
 };
 
 constexpr Delta DELTAS[] = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
-const std::string DIRS = "NESW";
+const std::string_view DIRS = "NESW";
 
 int xBound, yBound;
 bool scent[MAX_COORDINATE + 1][MAX_COORDINATE + 1];
@@ -36,9 +36,6 @@ void moveForward(int& x, int& y, int dirIdx, bool& isLost) {
 }
 
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-
     std::cin >> xBound >> yBound;
 
     int x, y;
