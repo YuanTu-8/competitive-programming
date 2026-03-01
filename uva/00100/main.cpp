@@ -14,9 +14,6 @@ int cycleLength(long long n) {
 }
 
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-
     for (int i, j; std::cin >> i >> j;) {
         auto [lower, upper] = std::minmax(i, j);
 
