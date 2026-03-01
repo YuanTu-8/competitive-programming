@@ -33,9 +33,6 @@ std::vector<Event> buildSortedEvents() {
 }
 
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-
     auto events = buildSortedEvents();
 
     std::multiset<int> activeHeights = {0};  // ground level
