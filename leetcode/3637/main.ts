@@ -1,11 +1,11 @@
 function isTrionic(nums: number[]): boolean {
     const length = nums.length;
-    
+
     const scanWhile = (start: number, condition: (i: number) => boolean): number => {
         let i = start;
-        while (i < length - 1 && condition(i)) {
+        while (i < length - 1 && condition(i))
             ++i;
-        }
+
         return i;
     };
 
