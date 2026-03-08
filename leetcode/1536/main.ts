@@ -12,9 +12,8 @@ function minSwaps(grid: number[][]): number {
         // Find nearest row with enough trailing zeros
         const found = trailingZeros.findIndex((zeros, i) => i >= targetRow && zeros >= need);
 
-        if (found === -1) {
+        if (found === -1)
             return -1;
-        }
 
         // Bubble the found row up to targetRow
         for (let i = found; i > targetRow; --i) {
