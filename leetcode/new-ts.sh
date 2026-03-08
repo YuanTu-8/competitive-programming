@@ -5,6 +5,7 @@ cat > "$1/tsconfig.json" << 'EOF'
 {
   "compilerOptions": {
     "strict": true,
+    "target": "ES2022",
     "lib": ["ES2022", "DOM"]
   }
 }
